@@ -5,7 +5,8 @@ export default function Result({results}) {
         <div key={result.id}>
           {result.original_title}
         </div>
-      ) )}
+      ))
+      }
     </div>
   )
 }
