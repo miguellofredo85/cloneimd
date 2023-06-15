@@ -1,28 +1,29 @@
-'use client';
+"use client";
 
-import Provider from './Provider';
-import Header from '@/components/Header';
-import Navbar from '@/components/Navbar';
-import './globals.css'
-import { Inter } from 'next/font/google'
+import Provider from "./Provider";
+import Header from "@/components/Header";
+import Navbar from "@/components/Navbar";
+import SearchBar from "@/components/SearchBar";
+import "./globals.css";
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'IMDbClone'
-}
+  title: "IMDbClone",
+};
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
-        <body className={inter.className}>
-      <Provider>
-          <Header/>
-          <Navbar/>
+      <body className={inter.className}>
+        <Provider>
+          <Header />
+          <Navbar />
+          <SearchBar />
           {children}
-      </Provider>
-        </body>
+        </Provider>
+      </body>
     </html>
-  )
+  );
 }
