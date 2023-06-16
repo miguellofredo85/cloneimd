@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import Provider from "./Provider";
 import Header from "@/components/Header";
